@@ -1,0 +1,32 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.16, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\F3\Downloads\painel-auditoria-v2\painel-auditoria\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\F3\Downloads\painel-auditoria-v2\painel-auditoria
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.15.1
+collecting ... collected 21 items
+
+tests/test_metricas.py::test_t01_exemplo_feito_a_mao PASSED              [  4%]
+tests/test_metricas.py::test_t02_confere_com_bibliotecas PASSED          [  9%]
+tests/test_metricas.py::test_metrica_indefinida_vira_nan PASSED          [ 14%]
+tests/test_persistencia.py::test_t10_hash_muda_com_um_valor PASSED       [ 19%]
+tests/test_persistencia.py::test_rf20_metricas_recalculadas_conferem PASSED [ 23%]
+tests/test_persistencia.py::test_ex08_alerta_quando_previsoes_sao_alteradas PASSED [ 28%]
+tests/test_persistencia.py::test_rnf11_arquivo_de_previsoes_somente_leitura PASSED [ 33%]
+tests/test_persistencia.py::test_rf21_modo_avaliador_recusa_gravacao PASSED [ 38%]
+tests/test_persistencia.py::test_rf18_validacao_do_arquivo_importado PASSED [ 42%]
+tests/test_persistencia.py::test_importacao_registra_e_calcula PASSED    [ 47%]
+tests/test_protocolo.py::test_t03_detecta_vies_conhecido PASSED          [ 52%]
+tests/test_protocolo.py::test_t03_sem_vies_nao_inventa_diferenca PASSED  [ 57%]
+tests/test_protocolo.py::test_t04_rotulos_embaralhados_auc_perto_de_meio PASSED [ 61%]
+tests/test_protocolo.py::test_t05_divisao PASSED                         [ 66%]
+tests/test_protocolo.py::test_t06_teste_nao_influencia_ajustes PASSED    [ 71%]
+tests/test_protocolo.py::test_t07_pesos_da_reponderacao PASSED           [ 76%]
+tests/test_protocolo.py::test_t08_limiar_atende_restricao_na_validacao PASSED [ 80%]
+tests/test_protocolo.py::test_t09_reprodutibilidade PASSED               [ 85%]
+tests/test_protocolo.py::test_sexo_fora_das_entradas_por_padrao PASSED   [ 90%]
+tests/test_validacao_base.py::test_estrutura_da_adult_passa_e_versoes_incompletas_falham PASSED [ 95%]
+tests/test_validacao_base.py::test_hash_registrado_detecta_troca_de_base PASSED [100%]
+
+============================= 21 passed in 25.78s =============================

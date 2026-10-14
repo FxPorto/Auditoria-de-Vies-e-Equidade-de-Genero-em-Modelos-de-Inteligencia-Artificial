@@ -1,0 +1,6 @@
+# A base é comparada pelo hash SHA-256: o git não pode trocar as quebras de linha dela.
+dados/*.csv -text
+dados/*.sha256 -text
+*.csv.gz binary
+*.png binary
+*.pdf binary

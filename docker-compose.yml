@@ -1,0 +1,17 @@
+# Pesquisador em http://localhost:8501 e Avaliador (somente leitura) em http://localhost:8502
+services:
+  pesquisador:
+    build: .
+    ports: ["8501:8501"]
+    environment: [MODO=pesquisador]
+    volumes:
+      - ./dados:/app/dados
+      - ./execucoes:/app/execucoes
+      - ./resultados:/app/resultados
+  avaliador:
+    build: .
+    ports: ["8502:8501"]
+    environment: [MODO=avaliador]
+    volumes:
+      - ./dados:/app/dados:ro
+      - ./execucoes:/app/execucoes:ro

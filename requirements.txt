@@ -1,0 +1,9 @@
+# versões testadas em 11/10/2026 (Python 3.13)
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+fairlearn==0.14.0
+matplotlib==3.11.2
+streamlit==1.65.0
+pytest==9.1.1

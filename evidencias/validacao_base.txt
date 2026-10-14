@@ -1,0 +1,18 @@
+Arquivo: C:\Users\F3\Downloads\painel-auditoria-v2\painel-auditoria\dados\adult.csv
+
+[OK    ] Número de registros: 48842  (esperado: 48.842)
+[OK    ] Colunas: todas presentes  (esperado: 14 variáveis + income)
+[OK    ] Alvo (income) com duas classes: [0, 1]  (esperado: [0, 1] (>50K = 1))
+[OK    ] Sexo registrado: Female, Male  (esperado: Female, Male)
+[OK    ] Proporção com renda acima de US$ 50 mil: 0,239  (esperado: 0,239)
+[OK    ] Proporção de homens: 0,668  (esperado: 0,668)
+[OK    ] Taxa-base dos homens: 0,304  (esperado: 0,304)
+[OK    ] Taxa-base das mulheres: 0,109  (esperado: 0,109)
+[OK    ] Valores ausentes: workclass: 2799; occupation: 2809; native-country: 857  (esperado: só em workclass, occupation e native-country (cerca de 2.800, 2.800 e 860))
+[OK    ] Faixa de idade: 17 a 90  (esperado: 17 a 90)
+[INFO  ] Linhas repetidas (informativo): 52  (esperado: existem na base original; não remover)
+
+Hash SHA-256: b5802f938fa90b9e203d9cc165f5f6eb91fcd32fd3edb7ccf29ba6ee550fa9d7
+[OK    ] Hash registrado em adult.sha256. Façam commit deste arquivo junto com a base.
+
+Resultado: base validada. Pode seguir para o piloto.
