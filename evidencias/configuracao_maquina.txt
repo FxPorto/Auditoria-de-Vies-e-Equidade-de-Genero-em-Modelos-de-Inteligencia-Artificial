@@ -1,0 +1,14 @@
+Configuracao da maquina - experimento principal
+
+Execucao: principal (ID 2cdb13cafd), 13/10/2026
+Tempo total: 9,3 min (28 s por semente), 20 sementes
+Base: OpenML 1590 (Adult), 48.842 registros
+SHA-256 da base: b5802f938fa90b9e203d9cc165f5f6eb91fcd32fd3edb7ccf29ba6ee550fa9d7
+Commit dos resultados: b565e4e
+
+Computador: Dell G15 5515
+Processador: AMD Ryzen 7 5800H with Radeon Graphics, 3,20 GHz (8 nucleos, 16 threads)
+RAM: 32 GB instalados (31,4 GB utilizaveis), 3200 MT/s
+Sistema: Windows 11 Enterprise, versao 26H2, compilacao 26300.9457, 64 bits
+Python: 3.13.16
+Bibliotecas: scikit-learn 1.9.1 | fairlearn 0.14.0 | pandas 3.0.5 | numpy 2.5.3
