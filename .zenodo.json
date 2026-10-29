@@ -1,0 +1,15 @@
+{
+"title": "Painel de auditoria de viés e equidade de gênero em modelos de IA (código, dados e resultados)",
+"upload_type": "software",
+"description": "Código, bases e resultados do TCC Auditoria de viés e equidade de gênero em modelos de Inteligência Artificial (Engenharia de Software, USJT).",
+"creators": [
+{"name": "Tuckmantel, Bruno Alves", "affiliation": "Universidade São Judas Tadeu"},
+{"name": "Estevão, Fernando Porto", "affiliation": "Universidade São Judas Tadeu"},
+{"name": "Cardoso, Grazielle Gomes da Silva", "affiliation": "Universidade São Judas Tadeu"},
+{"name": "Silva, Rafael Expedito Prado da", "affiliation": "Universidade São Judas Tadeu"},
+{"name": "Oliveira, Thiago Cordeiro de", "affiliation": "Universidade São Judas Tadeu"},
+{"name": "Aguiar, Nelson", "affiliation": "Universidade São Judas Tadeu"}
+],
+"license": "MIT",
+"language": "por"
+}
