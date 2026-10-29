@@ -1,0 +1,9 @@
+﻿verificacao;valor;referencia;situacao
+Número de registros;195665;cerca de 195.665;OK
+Proporção com renda alta;0.411;entre 0,15 e 0,60 (faixa ampla);OK
+Proporção de homens;0.528;entre 0,40 e 0,70;OK
+Taxa-base homens / mulheres;0.466 / 0.349;homens acima de mulheres;OK
+Acurácia original (regressao_logistica);0.817;acima da linha de base (0.589) e abaixo de 0,95;OK
+AUC original (regressao_logistica);0.894;entre 0,70 e 0,97;OK
+Acurácia original (random_forest);0.813;acima da linha de base (0.589) e abaixo de 0,95;OK
+AUC original (random_forest);0.893;entre 0,70 e 0,97;OK

@@ -1,0 +1,13 @@
+﻿Modelo;Cenário;Sexo registrado;Taxa-base;Taxa de seleção;TPR;FPR
+Regressão logística;Original;Female;0,351 (0,349 a 0,352);0,365 (0,365 a 0,366);0,767 (0,765 a 0,770);0,148 (0,146 a 0,151)
+Regressão logística;Original;Male;0,464 (0,463 a 0,465);0,452 (0,452 a 0,453);0,785 (0,784 a 0,786);0,165 (0,163 a 0,166)
+Regressão logística;Reponderação;Female;0,351 (0,349 a 0,352);0,378 (0,377 a 0,379);0,783 (0,780 a 0,786);0,159 (0,157 a 0,161)
+Regressão logística;Reponderação;Male;0,464 (0,463 a 0,465);0,442 (0,442 a 0,443);0,774 (0,773 a 0,774);0,156 (0,154 a 0,157)
+Regressão logística;Limiar por grupo;Female;0,351 (0,349 a 0,352);0,409 (0,405 a 0,412);0,818 (0,811 a 0,825);0,188 (0,187 a 0,188)
+Regressão logística;Limiar por grupo;Male;0,464 (0,463 a 0,465);0,411 (0,410 a 0,412);0,735 (0,734 a 0,737);0,130 (0,129 a 0,132)
+Random Forest;Original;Female;0,351 (0,349 a 0,352);0,348 (0,340 a 0,356);0,739 (0,726 a 0,753);0,136 (0,133 a 0,139)
+Random Forest;Original;Male;0,464 (0,463 a 0,465);0,425 (0,409 a 0,441);0,748 (0,728 a 0,769);0,145 (0,131 a 0,159)
+Random Forest;Reponderação;Female;0,351 (0,349 a 0,352);0,355 (0,350 a 0,361);0,750 (0,741 a 0,759);0,142 (0,140 a 0,144)
+Random Forest;Reponderação;Male;0,464 (0,463 a 0,465);0,418 (0,401 a 0,435);0,741 (0,719 a 0,762);0,139 (0,124 a 0,153)
+Random Forest;Limiar por grupo;Female;0,351 (0,349 a 0,352);0,403 (0,395 a 0,410);0,809 (0,800 a 0,817);0,183 (0,177 a 0,189)
+Random Forest;Limiar por grupo;Male;0,464 (0,463 a 0,465);0,404 (0,398 a 0,410);0,722 (0,713 a 0,731);0,128 (0,124 a 0,133)

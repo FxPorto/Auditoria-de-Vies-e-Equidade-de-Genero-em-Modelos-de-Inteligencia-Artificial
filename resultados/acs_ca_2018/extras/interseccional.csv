@@ -1,0 +1,109 @@
+﻿Modelo;Cenário;Sexo registrado;Raça;Pessoas por teste (média);Renda alta por teste (média);Taxa-base;Taxa-base IC inf;Taxa-base IC sup;Seleção;Seleção IC inf;Seleção IC sup;TPR;TPR IC inf;TPR IC sup;Precisão;Precisão IC inf;Precisão IC sup;Amostra pequena
+Regressão logística;Original;Male;White;12941;6564;0,5073;0,5061;0,5084;0,5027;0,5013;0,5042;0,8102;0,8084;0,812;0,8175;0,8158;0,8191;não
+Regressão logística;Original;Female;White;11249;4168;0,3705;0,3693;0,372;0,3959;0,3945;0,3975;0,7831;0,7805;0,7859;0,7328;0,7312;0,7344;não
+Regressão logística;Original;Male;Asian;3273;1748;0,534;0,5303;0,5374;0,5473;0,5437;0,5513;0,8398;0,8368;0,843;0,8194;0,815;0,8236;não
+Regressão logística;Original;Male;Other;2525;605;0,2398;0,237;0,2425;0,1495;0,147;0,152;0,4306;0,4235;0,4381;0,6908;0,6812;0,7005;não
+Regressão logística;Original;Male;Amer-Indian-Alaska-Native;46;11;0,2388;0,2155;0,2609;0,1808;0,1636;0,1992;0,5486;0,4904;0,6127;0,7134;0,6605;0,7703;sim
+Regressão logística;Original;Female;Asian;3283;1400;0,4264;0,4225;0,4304;0,4491;0,4455;0,4529;0,8045;0,7997;0,8088;0,7638;0,7584;0,7688;não
+Regressão logística;Original;Female;Other;2024;275;0,136;0,1326;0,1395;0,1096;0,1076;0,1115;0,5076;0,4922;0,5213;0,6291;0,6157;0,642;não
+Regressão logística;Original;Female;Pacific-Islander;60;15;0,2484;0,2289;0,2681;0,2166;0,1973;0,2361;0,6033;0,5475;0,6564;0,6891;0,6395;0,7409;sim
+Regressão logística;Original;Female;Two-or-more;808;257;0,3184;0,3107;0,3265;0,3159;0,3084;0,3231;0,7264;0,7159;0,737;0,7321;0,7205;0,7429;não
+Regressão logística;Original;Male;Black;840;309;0,3672;0,3605;0,3742;0,3315;0,3246;0,3379;0,6665;0,6529;0,679;0,738;0,7269;0,7487;não
+Regressão logística;Original;Female;Black;877;276;0,3153;0,3098;0,3206;0,307;0,3013;0,3129;0,6701;0,6602;0,6798;0,6882;0,6782;0,6982;não
+Regressão logística;Original;Male;Two-or-more;835;332;0,3972;0,3919;0,4025;0,3853;0,3786;0,3919;0,7579;0,7487;0,7679;0,7814;0,7738;0,7891;não
+Regressão logística;Original;Male;American-Indian;131;42;0,3227;0,3045;0,3418;0,2889;0,2735;0,3044;0,6354;0,609;0,6646;0,7086;0,6772;0,7345;não
+Regressão logística;Original;Male;Pacific-Islander;66;24;0,3626;0,346;0,3798;0,3129;0,2928;0,3333;0,5726;0,5248;0,6202;0,6605;0,6206;0,7006;sim
+Regressão logística;Original;Female;American-Indian;128;30;0,2327;0,2186;0,2483;0,2221;0,2078;0,2364;0,6067;0,5715;0,6409;0,633;0,6053;0,6614;sim
+Regressão logística;Original;Female;Amer-Indian-Alaska-Native;45;10;0,2159;0,1878;0,2441;0,148;0,1225;0,1718;0,4021;0,3265;0,4712;0,6354;0,538;0,7261;sim
+Regressão logística;Original;Female;Alaska-Native;2;1;0,526;0,3958;0,6615;0,5885;0,4426;0,7396;1,0;1,0;1,0;0,9286;0,8214;1,0;sim
+Regressão logística;Original;Male;Alaska-Native;1;0;0,0;0,0;0,0;0,25;0,0;0,625;;;;0,0;0,0;0,0;sim
+Regressão logística;Reponderação;Male;White;12941;6564;0,5073;0,5061;0,5084;0,4918;0,4904;0,4933;0,7986;0,7969;0,8003;0,8236;0,822;0,8253;não
+Regressão logística;Reponderação;Female;White;11249;4168;0,3705;0,3693;0,372;0,4092;0,4077;0,4107;0,7988;0,7962;0,8016;0,7233;0,7217;0,7249;não
+Regressão logística;Reponderação;Male;Asian;3273;1748;0,534;0,5303;0,5374;0,5428;0,5391;0,5465;0,8346;0,8316;0,8378;0,8212;0,8169;0,8254;não
+Regressão logística;Reponderação;Male;Other;2525;605;0,2398;0,237;0,2425;0,1363;0,1338;0,1388;0,4038;0,3966;0,412;0,7106;0,7008;0,721;não
+Regressão logística;Reponderação;Male;Amer-Indian-Alaska-Native;46;11;0,2388;0,2155;0,2609;0,18;0,1616;0,199;0,5461;0,4905;0,6087;0,7187;0,662;0,7797;sim
+Regressão logística;Reponderação;Female;Asian;3283;1400;0,4264;0,4225;0,4304;0,4626;0,4593;0,4662;0,8195;0,8149;0,8237;0,7553;0,7505;0,7603;não
+Regressão logística;Reponderação;Female;Other;2024;275;0,136;0,1326;0,1395;0,1148;0,1128;0,1168;0,5253;0,5113;0,5384;0,6219;0,6078;0,6352;não
+Regressão logística;Reponderação;Female;Pacific-Islander;60;15;0,2484;0,2289;0,2681;0,2334;0,2122;0,2553;0,6276;0,5716;0,6807;0,6683;0,6154;0,7238;sim
+Regressão logística;Reponderação;Female;Two-or-more;808;257;0,3184;0,3107;0,3265;0,3276;0,3205;0,3344;0,7463;0,7354;0,7572;0,7251;0,7134;0,7365;não
+Regressão logística;Reponderação;Male;Black;840;309;0,3672;0,3605;0,3742;0,3277;0,3201;0,3344;0,661;0,6468;0,6745;0,7404;0,73;0,7515;não
+Regressão logística;Reponderação;Female;Black;877;276;0,3153;0,3098;0,3206;0,3229;0,3172;0,3288;0,6924;0,6822;0,7026;0,6761;0,6661;0,6862;não
+Regressão logística;Reponderação;Male;Two-or-more;835;332;0,3972;0,3919;0,4025;0,3775;0,3716;0,3837;0,746;0,738;0,7552;0,785;0,7769;0,7928;não
+Regressão logística;Reponderação;Male;American-Indian;131;42;0,3227;0,3045;0,3418;0,2797;0,2639;0,295;0,6213;0,591;0,6529;0,7153;0,683;0,7424;não
+Regressão logística;Reponderação;Male;Pacific-Islander;66;24;0,3626;0,346;0,3798;0,289;0,2632;0,3146;0,545;0,4873;0,6051;0,6766;0,6386;0,7174;sim
+Regressão logística;Reponderação;Female;American-Indian;128;30;0,2327;0,2186;0,2483;0,2392;0,2264;0,2528;0,6493;0,6191;0,6806;0,63;0,5995;0,6589;sim
+Regressão logística;Reponderação;Female;Amer-Indian-Alaska-Native;45;10;0,2159;0,1878;0,2441;0,1734;0,1469;0,1975;0,4669;0,3947;0,5327;0,6288;0,5283;0,7218;sim
+Regressão logística;Reponderação;Female;Alaska-Native;2;1;0,526;0,3958;0,6615;0,5885;0,4426;0,7396;1,0;1,0;1,0;0,9286;0,8214;1,0;sim
+Regressão logística;Reponderação;Male;Alaska-Native;1;0;0,0;0,0;0,0;0,25;0,0;0,625;;;;0,0;0,0;0,0;sim
+Regressão logística;Limiar por grupo;Male;White;12941;6564;0,5073;0,5061;0,5084;0,4557;0,4509;0,461;0,7563;0,7503;0,7628;0,842;0,8389;0,8447;não
+Regressão logística;Limiar por grupo;Female;White;11249;4168;0,3705;0,3693;0,372;0,4379;0,4341;0,442;0,8287;0,8248;0,8329;0,7013;0,6978;0,7046;não
+Regressão logística;Limiar por grupo;Male;Asian;3273;1748;0,534;0,5303;0,5374;0,5039;0,4998;0,5083;0,7935;0,7885;0,7987;0,841;0,8365;0,8451;não
+Regressão logística;Limiar por grupo;Male;Other;2525;605;0,2398;0,237;0,2425;0,1143;0,111;0,1179;0,3519;0,3418;0,3634;0,7384;0,7279;0,7493;não
+Regressão logística;Limiar por grupo;Male;Amer-Indian-Alaska-Native;46;11;0,2388;0,2155;0,2609;0,1488;0,1323;0,1655;0,459;0,397;0,5226;0,7235;0,6495;0,791;sim
+Regressão logística;Limiar por grupo;Female;Asian;3283;1400;0,4264;0,4225;0,4304;0,4913;0,4862;0,4965;0,8495;0,8429;0,8553;0,7373;0,7325;0,7416;não
+Regressão logística;Limiar por grupo;Female;Other;2024;275;0,136;0,1326;0,1395;0,1347;0,1321;0,1373;0,5791;0,5675;0,5909;0,5847;0,5702;0,5994;não
+Regressão logística;Limiar por grupo;Female;Pacific-Islander;60;15;0,2484;0,2289;0,2681;0,2678;0,2442;0,2931;0,672;0,6234;0,7237;0,63;0,573;0,6893;sim
+Regressão logística;Limiar por grupo;Female;Two-or-more;808;257;0,3184;0,3107;0,3265;0,3538;0,3453;0,3627;0,7779;0,7678;0,7876;0,7002;0,6893;0,7111;não
+Regressão logística;Limiar por grupo;Male;Black;840;309;0,3672;0,3605;0,3742;0,2836;0,2755;0,2918;0,5911;0,5769;0,6059;0,7654;0,7562;0,7754;não
+Regressão logística;Limiar por grupo;Female;Black;877;276;0,3153;0,3098;0,3206;0,3509;0,3449;0,3577;0,7257;0,7153;0,7372;0,6521;0,643;0,6618;não
+Regressão logística;Limiar por grupo;Male;Two-or-more;835;332;0,3972;0,3919;0,4025;0,3387;0,3314;0,3461;0,6954;0,6846;0,7063;0,816;0,8062;0,8255;não
+Regressão logística;Limiar por grupo;Male;American-Indian;131;42;0,3227;0,3045;0,3418;0,2465;0,2328;0,2602;0,5643;0,5332;0,5987;0,7358;0,7001;0,7641;não
+Regressão logística;Limiar por grupo;Male;Pacific-Islander;66;24;0,3626;0,346;0,3798;0,2413;0,2192;0,2644;0,4627;0,4134;0,5095;0,6904;0,6533;0,7313;sim
+Regressão logística;Limiar por grupo;Female;American-Indian;128;30;0,2327;0,2186;0,2483;0,266;0,2537;0,2799;0,7025;0,6706;0,7371;0,6121;0,5837;0,641;sim
+Regressão logística;Limiar por grupo;Female;Amer-Indian-Alaska-Native;45;10;0,2159;0,1878;0,2441;0,1953;0,1663;0,2209;0,5199;0,4378;0,5877;0,6182;0,5197;0,7094;sim
+Regressão logística;Limiar por grupo;Female;Alaska-Native;2;1;0,526;0,3958;0,6615;0,5885;0,4426;0,7396;1,0;1,0;1,0;0,9286;0,8214;1,0;sim
+Regressão logística;Limiar por grupo;Male;Alaska-Native;1;0;0,0;0,0;0,0;0,0;0,0;0,0;;;;;;;sim
+Random Forest;Original;Male;White;12941;6564;0,5073;0,5061;0,5084;0,4789;0,4744;0,4836;0,7804;0,7757;0,7856;0,8268;0,823;0,8305;não
+Random Forest;Original;Female;White;11249;4168;0,3705;0,3693;0,372;0,3822;0,38;0,3844;0,7647;0,7616;0,7676;0,7414;0,7396;0,7432;não
+Random Forest;Original;Male;Asian;3273;1748;0,534;0,5303;0,5374;0,5195;0,5146;0,5246;0,8089;0,803;0,8154;0,8315;0,8278;0,835;não
+Random Forest;Original;Male;Other;2525;605;0,2398;0,237;0,2425;0,0954;0,0776;0,1138;0,2803;0,2378;0,3244;0,735;0,7024;0,7674;não
+Random Forest;Original;Male;Amer-Indian-Alaska-Native;46;11;0,2388;0,2155;0,2609;0,1821;0,1618;0,2026;0,5852;0,5351;0,6353;0,7728;0,7081;0,8323;sim
+Random Forest;Original;Female;Asian;3283;1400;0,4264;0,4225;0,4304;0,4333;0,4292;0,4371;0,7806;0,7744;0,7868;0,7682;0,763;0,7737;não
+Random Forest;Original;Female;Other;2024;275;0,136;0,1326;0,1395;0,0798;0,07;0,0895;0,3924;0,3587;0,4241;0,6848;0,6592;0,7092;não
+Random Forest;Original;Female;Pacific-Islander;60;15;0,2484;0,2289;0,2681;0,2184;0,2022;0,2356;0,4855;0,4258;0,5488;0,5502;0,4818;0,6232;sim
+Random Forest;Original;Female;Two-or-more;808;257;0,3184;0,3107;0,3265;0,306;0,2982;0,3139;0,7135;0,6983;0,7278;0,7424;0,7299;0,7541;não
+Random Forest;Original;Male;Black;840;309;0,3672;0,3605;0,3742;0,313;0,304;0,3213;0,6447;0,6323;0,658;0,7569;0,746;0,7683;não
+Random Forest;Original;Female;Black;877;276;0,3153;0,3098;0,3206;0,2984;0,2898;0,3073;0,6457;0,633;0,6579;0,6831;0,6729;0,6935;não
+Random Forest;Original;Male;Two-or-more;835;332;0,3972;0,3919;0,4025;0,3444;0,3367;0,3519;0,699;0,6855;0,7125;0,8064;0,7964;0,8168;não
+Random Forest;Original;Male;American-Indian;131;42;0,3227;0,3045;0,3418;0,2712;0,2536;0,2902;0,6235;0,5978;0,6509;0,7436;0,7127;0,7745;não
+Random Forest;Original;Male;Pacific-Islander;66;24;0,3626;0,346;0,3798;0,2922;0,2759;0,3088;0,5656;0,525;0,6091;0,6972;0,6649;0,7305;sim
+Random Forest;Original;Female;American-Indian;128;30;0,2327;0,2186;0,2483;0,2398;0,2243;0,2574;0,6596;0,6268;0,6932;0,6401;0,6106;0,6697;sim
+Random Forest;Original;Female;Amer-Indian-Alaska-Native;45;10;0,2159;0,1878;0,2441;0,1917;0,1675;0,2169;0,4708;0,4167;0,524;0,5476;0,4705;0,6244;sim
+Random Forest;Original;Female;Alaska-Native;2;1;0,526;0,3958;0,6615;0,4896;0,3542;0,6354;0,8929;0,7143;1,0;1,0;1,0;1,0;sim
+Random Forest;Original;Male;Alaska-Native;1;0;0,0;0,0;0,0;0,5;0,125;0,875;;;;0,0;0,0;0,0;sim
+Random Forest;Reponderação;Male;White;12941;6564;0,5073;0,5061;0,5084;0,4705;0,4655;0,4758;0,7712;0,7657;0,777;0,8315;0,8274;0,8357;não
+Random Forest;Reponderação;Female;White;11249;4168;0,3705;0,3693;0,372;0,3912;0,3896;0,3928;0,7758;0,7732;0,7783;0,7347;0,7333;0,7362;não
+Random Forest;Reponderação;Male;Asian;3273;1748;0,534;0,5303;0,5374;0,5151;0,5094;0,5205;0,8047;0,7983;0,8113;0,8344;0,8298;0,8386;não
+Random Forest;Reponderação;Male;Other;2525;605;0,2398;0,237;0,2425;0,0899;0,0732;0,1074;0,2676;0,2252;0,3108;0,7418;0,7102;0,7725;não
+Random Forest;Reponderação;Male;Amer-Indian-Alaska-Native;46;11;0,2388;0,2155;0,2609;0,1785;0,1563;0,2021;0,5813;0,5187;0,6465;0,775;0,7181;0,8309;sim
+Random Forest;Reponderação;Female;Asian;3283;1400;0,4264;0,4225;0,4304;0,441;0,4373;0,4448;0,7905;0,7852;0,7955;0,7643;0,7595;0,7696;não
+Random Forest;Reponderação;Female;Other;2024;275;0,136;0,1326;0,1395;0,0826;0,0728;0,0924;0,4035;0,3709;0,436;0,6797;0,6556;0,7034;não
+Random Forest;Reponderação;Female;Pacific-Islander;60;15;0,2484;0,2289;0,2681;0,22;0,204;0,2359;0,4967;0,4406;0,5572;0,5571;0,4975;0,6248;sim
+Random Forest;Reponderação;Female;Two-or-more;808;257;0,3184;0,3107;0,3265;0,3119;0,3046;0,3196;0,7213;0,7088;0,7335;0,7363;0,7227;0,75;não
+Random Forest;Reponderação;Male;Black;840;309;0,3672;0,3605;0,3742;0,3094;0,3003;0,3182;0,6389;0,6252;0,6536;0,7587;0,747;0,7713;não
+Random Forest;Reponderação;Female;Black;877;276;0,3153;0,3098;0,3206;0,3115;0,3035;0,3196;0,6682;0,6573;0,6788;0,677;0,6664;0,6873;não
+Random Forest;Reponderação;Male;Two-or-more;835;332;0,3972;0,3919;0,4025;0,3401;0,3331;0,3473;0,6937;0,681;0,7072;0,8102;0,8013;0,8203;não
+Random Forest;Reponderação;Male;American-Indian;131;42;0,3227;0,3045;0,3418;0,2671;0,2522;0,2837;0,6166;0,5905;0,6446;0,744;0,7131;0,7766;não
+Random Forest;Reponderação;Male;Pacific-Islander;66;24;0,3626;0,346;0,3798;0,283;0,2656;0,3006;0,5497;0,507;0,595;0,6993;0,6644;0,7372;sim
+Random Forest;Reponderação;Female;American-Indian;128;30;0,2327;0,2186;0,2483;0,2485;0,2333;0,2645;0,6732;0,6457;0,7027;0,6313;0,5993;0,6636;sim
+Random Forest;Reponderação;Female;Amer-Indian-Alaska-Native;45;10;0,2159;0,1878;0,2441;0,2026;0,1799;0,2258;0,5178;0,4663;0,5696;0,5675;0,4902;0,6476;sim
+Random Forest;Reponderação;Female;Alaska-Native;2;1;0,526;0,3958;0,6615;0,5052;0,375;0,6458;0,9643;0,8929;1,0;1,0;1,0;1,0;sim
+Random Forest;Reponderação;Male;Alaska-Native;1;0;0,0;0,0;0,0;0,5;0,125;0,875;;;;0,0;0,0;0,0;sim
+Random Forest;Limiar por grupo;Male;White;12941;6564;0,5073;0,5061;0,5084;0,4636;0,4587;0,4689;0,7624;0,7559;0,7688;0,8342;0,832;0,8364;não
+Random Forest;Limiar por grupo;Female;White;11249;4168;0,3705;0,3693;0,372;0,4406;0,4368;0,4445;0,8298;0,8255;0,8342;0,6979;0,6947;0,7009;não
+Random Forest;Limiar por grupo;Male;Asian;3273;1748;0,534;0,5303;0,5374;0,5042;0,4984;0,51;0,7924;0,7853;0,7996;0,8395;0,835;0,8437;não
+Random Forest;Limiar por grupo;Male;Other;2525;605;0,2398;0,237;0,2425;0,0839;0,0703;0,0974;0,2541;0,2201;0,2885;0,7471;0,7181;0,7758;não
+Random Forest;Limiar por grupo;Male;Amer-Indian-Alaska-Native;46;11;0,2388;0,2155;0,2609;0,162;0,142;0,1834;0,5475;0,4943;0,6038;0,8133;0,751;0,8742;sim
+Random Forest;Limiar por grupo;Female;Asian;3283;1400;0,4264;0,4225;0,4304;0,4939;0,4892;0,4989;0,8469;0,8413;0,8523;0,7312;0,7252;0,7372;não
+Random Forest;Limiar por grupo;Female;Other;2024;275;0,136;0,1326;0,1395;0,113;0,102;0,1242;0,497;0,4668;0,5255;0,6094;0,5871;0,6324;não
+Random Forest;Limiar por grupo;Female;Pacific-Islander;60;15;0,2484;0,2289;0,2681;0,3013;0,2867;0,3158;0,6438;0,6006;0,6859;0,5335;0,4806;0,5896;sim
+Random Forest;Limiar por grupo;Female;Two-or-more;808;257;0,3184;0,3107;0,3265;0,3668;0,3577;0,3759;0,8018;0,7905;0,8147;0,6961;0,684;0,709;não
+Random Forest;Limiar por grupo;Male;Black;840;309;0,3672;0,3605;0,3742;0,2933;0,2836;0,3025;0,6147;0,6019;0,6272;0,7706;0,7601;0,7819;não
+Random Forest;Limiar por grupo;Female;Black;877;276;0,3153;0,3098;0,3206;0,3698;0,3605;0,3781;0,7389;0,728;0,7503;0,6305;0,6214;0,639;não
+Random Forest;Limiar por grupo;Male;Two-or-more;835;332;0,3972;0,3919;0,4025;0,3269;0,3198;0,3338;0,6759;0,6624;0,6891;0,8213;0,8108;0,8315;não
+Random Forest;Limiar por grupo;Male;American-Indian;131;42;0,3227;0,3045;0,3418;0,2521;0,2348;0,2712;0,5875;0,555;0,6213;0,7514;0,7238;0,7788;não
+Random Forest;Limiar por grupo;Male;Pacific-Islander;66;24;0,3626;0,346;0,3798;0,2755;0,2548;0,2959;0,534;0,4959;0,5737;0,7032;0,6713;0,738;sim
+Random Forest;Limiar por grupo;Female;American-Indian;128;30;0,2327;0,2186;0,2483;0,3101;0,2924;0,3289;0,7745;0,7439;0,8059;0,5806;0,5574;0,6052;sim
+Random Forest;Limiar por grupo;Female;Amer-Indian-Alaska-Native;45;10;0,2159;0,1878;0,2441;0,2435;0,2199;0,2665;0,5986;0,5369;0,6592;0,5399;0,4645;0,6138;sim
+Random Forest;Limiar por grupo;Female;Alaska-Native;2;1;0,526;0,3958;0,6615;0,5885;0,4426;0,7396;1,0;1,0;1,0;0,9286;0,8214;1,0;sim
+Random Forest;Limiar por grupo;Male;Alaska-Native;1;0;0,0;0,0;0,0;0,5;0,125;0,875;;;;0,0;0,0;0,0;sim

@@ -1,0 +1,9 @@
+﻿Modelo;Cenário;Sexo registrado;Brier (média);IC inf;IC sup
+Regressão logística;Original;Male;0,1264;0,1256;0,1272
+Regressão logística;Original;Female;0,0545;0,0535;0,0555
+Regressão logística;Reponderação;Male;0,1283;0,1276;0,1291
+Regressão logística;Reponderação;Female;0,0601;0,059;0,0614
+Random Forest;Original;Male;0,1158;0,115;0,1166
+Random Forest;Original;Female;0,0511;0,0502;0,052
+Random Forest;Reponderação;Male;0,1178;0,1169;0,1186
+Random Forest;Reponderação;Female;0,0546;0,0535;0,0557
