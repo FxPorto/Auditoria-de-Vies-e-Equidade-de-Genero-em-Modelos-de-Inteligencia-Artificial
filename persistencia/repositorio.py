@@ -93,7 +93,7 @@ class Repositorio:
         if arq.is_file():
             if _hash(arq) != linha["hash_previsoes"]:      # EX08
                 res["alerta_previsoes"] = "O arquivo de previsões foi alterado depois da execução (hash diferente)."
-            res["previsoes"] = pd.read_csv(arq)
+            res["previsoes"] = pd.read_csv(arq, float_precision="round_trip")  # leitura exata dos escores
         else:
             res["previsoes"] = None
             res["alerta_previsoes"] = "Arquivo de previsões não encontrado."

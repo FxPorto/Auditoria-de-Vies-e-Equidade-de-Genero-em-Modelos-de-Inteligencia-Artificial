@@ -1,7 +1,7 @@
 <!doctype html><html lang="pt-BR"><meta charset="utf-8">
-<title>Relatório de auditoria 2cdb13cafd</title><style>body{font-family:Georgia,serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.5;color:#0b0b0b}table{border-collapse:collapse;font-size:12px;width:100%;margin:8px 0 20px}td,th{border:1px solid #bbb;padding:4px 6px;text-align:left}th{background:#ececec}pre{background:#f4f4f4;padding:10px;font-size:12px;white-space:pre-wrap}</style>
+<title>Relatório de auditoria 5162e18bb3</title><style>body{font-family:Georgia,serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.5;color:#0b0b0b}table{border-collapse:collapse;font-size:12px;width:100%;margin:8px 0 20px}td,th{border:1px solid #bbb;padding:4px 6px;text-align:left}th{background:#ececec}pre{background:#f4f4f4;padding:10px;font-size:12px;white-space:pre-wrap}</style>
 <h1>Relatório de auditoria de viés e equidade</h1>
-<p>Execução <b>2cdb13cafd</b> · 2026-10-14T00:17:24+00:00 ·
+<p>Execução <b>5162e18bb3</b> · 2026-10-18T22:33:12+00:00 ·
 fonte: Adult Census Income ·
 hash dos dados: <code>b5802f938fa90b9e</code></p>
 <h2>Configuração</h2><table border="1" class="dataframe">
@@ -53,6 +53,7 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <th>Dif. de paridade demográfica</th>
       <th>Razão de paridade demográfica</th>
       <th>Dif. de igualdade de oportunidades</th>
+      <th>Dif. de TPR com sinal</th>
       <th>Dif. de equalized odds</th>
     </tr>
   </thead>
@@ -66,6 +67,7 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>0,179 (0,175 a 0,182)</td>
       <td>0,292 (0,284 a 0,301)</td>
       <td>0,110 (0,095 a 0,124)</td>
+      <td>0,110 (0,095 a 0,124)</td>
       <td>0,113 (0,101 a 0,125)</td>
     </tr>
     <tr>
@@ -77,6 +79,7 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>0,091 (0,088 a 0,095)</td>
       <td>0,569 (0,553 a 0,583)</td>
       <td>0,136 (0,122 a 0,149)</td>
+      <td>-0,136 (-0,149 a -0,122)</td>
       <td>0,136 (0,122 a 0,149)</td>
     </tr>
     <tr>
@@ -88,6 +91,7 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>0,010 (0,007 a 0,013)</td>
       <td>0,938 (0,920 a 0,955)</td>
       <td>0,322 (0,306 a 0,338)</td>
+      <td>-0,322 (-0,338 a -0,306)</td>
       <td>0,322 (0,306 a 0,338)</td>
     </tr>
     <tr>
@@ -98,6 +102,7 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>0,918 (0,917 a 0,919)</td>
       <td>0,165 (0,161 a 0,168)</td>
       <td>0,300 (0,291 a 0,311)</td>
+      <td>0,103 (0,090 a 0,115)</td>
       <td>0,103 (0,090 a 0,115)</td>
       <td>0,104 (0,092 a 0,115)</td>
     </tr>
@@ -110,6 +115,7 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>0,095 (0,091 a 0,100)</td>
       <td>0,530 (0,512 a 0,546)</td>
       <td>0,104 (0,089 a 0,120)</td>
+      <td>-0,104 (-0,120 a -0,089)</td>
       <td>0,104 (0,089 a 0,120)</td>
     </tr>
     <tr>
@@ -121,6 +127,7 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>0,012 (0,009 a 0,015)</td>
       <td>0,933 (0,916 a 0,950)</td>
       <td>0,305 (0,289 a 0,319)</td>
+      <td>-0,305 (-0,319 a -0,289)</td>
       <td>0,305 (0,289 a 0,319)</td>
     </tr>
   </tbody>
@@ -334,6 +341,16 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>sim</td>
     </tr>
     <tr>
+      <td>P2</td>
+      <td>Regressão logística: Reponderação − Original</td>
+      <td>Dif. de TPR com sinal</td>
+      <td>-0,2458</td>
+      <td>-0,2553 a -0,2360</td>
+      <td>-0,2748 a -0,2167</td>
+      <td>sim / sim</td>
+      <td>—</td>
+    </tr>
+    <tr>
       <td>P3</td>
       <td>Regressão logística: Limiar por grupo − Original</td>
       <td>Acurácia</td>
@@ -402,6 +419,16 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>-0,1853 a -0,1642</td>
       <td>sim / sim</td>
       <td>sim</td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>Regressão logística: Limiar por grupo − Original</td>
+      <td>Dif. de TPR com sinal</td>
+      <td>-0,4317</td>
+      <td>-0,4470 a -0,4171</td>
+      <td>-0,4756 a -0,3878</td>
+      <td>sim / sim</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>P3</td>
@@ -474,6 +501,16 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>sim</td>
     </tr>
     <tr>
+      <td>P3</td>
+      <td>Regressão logística: Limiar por grupo − Reponderação</td>
+      <td>Dif. de TPR com sinal</td>
+      <td>-0,1859</td>
+      <td>-0,1965 a -0,1749</td>
+      <td>-0,2190 a -0,1529</td>
+      <td>sim / sim</td>
+      <td>—</td>
+    </tr>
+    <tr>
       <td>P2</td>
       <td>Random Forest: Reponderação − Original</td>
       <td>Acurácia</td>
@@ -542,6 +579,16 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>-0,0786 a -0,0603</td>
       <td>sim / sim</td>
       <td>sim</td>
+    </tr>
+    <tr>
+      <td>P2</td>
+      <td>Random Forest: Reponderação − Original</td>
+      <td>Dif. de TPR com sinal</td>
+      <td>-0,2071</td>
+      <td>-0,2188 a -0,1966</td>
+      <td>-0,2412 a -0,1731</td>
+      <td>sim / sim</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>P3</td>
@@ -615,6 +662,16 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
     </tr>
     <tr>
       <td>P3</td>
+      <td>Random Forest: Limiar por grupo − Original</td>
+      <td>Dif. de TPR com sinal</td>
+      <td>-0,4077</td>
+      <td>-0,4220 a -0,3927</td>
+      <td>-0,4518 a -0,3637</td>
+      <td>sim / sim</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>P3</td>
       <td>Random Forest: Limiar por grupo − Reponderação</td>
       <td>Acurácia</td>
       <td>-0,0141</td>
@@ -682,6 +739,16 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>-0,1011 a -0,0793</td>
       <td>sim / sim</td>
       <td>sim</td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>Random Forest: Limiar por grupo − Reponderação</td>
+      <td>Dif. de TPR com sinal</td>
+      <td>-0,2006</td>
+      <td>-0,2115 a -0,1897</td>
+      <td>-0,2348 a -0,1664</td>
+      <td>sim / sim</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>P4</td>
@@ -755,6 +822,16 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
     </tr>
     <tr>
       <td>P4</td>
+      <td>Original: Random Forest − Regressão logística</td>
+      <td>Dif. de TPR com sinal</td>
+      <td>-0,0072</td>
+      <td>-0,0142 a -0,0004</td>
+      <td>-0,0283 a 0,0139</td>
+      <td>sim / não</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>P4</td>
       <td>Reponderação: Random Forest − Regressão logística</td>
       <td>Acurácia</td>
       <td>0,0149</td>
@@ -822,6 +899,16 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>-0,0047 a 0,0129</td>
       <td>sim / não</td>
       <td>não</td>
+    </tr>
+    <tr>
+      <td>P4</td>
+      <td>Reponderação: Random Forest − Regressão logística</td>
+      <td>Dif. de TPR com sinal</td>
+      <td>0,0314</td>
+      <td>0,0208 a 0,0427</td>
+      <td>-0,0024 a 0,0652</td>
+      <td>sim / não</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>P4</td>
@@ -893,12 +980,22 @@ hash dos dados: <code>b5802f938fa90b9e</code></p>
       <td>não / não</td>
       <td>não</td>
     </tr>
+    <tr>
+      <td>P4</td>
+      <td>Limiar por grupo: Random Forest − Regressão logística</td>
+      <td>Dif. de TPR com sinal</td>
+      <td>0,0168</td>
+      <td>0,0072 a 0,0264</td>
+      <td>-0,0120 a 0,0455</td>
+      <td>sim / não</td>
+      <td>—</td>
+    </tr>
   </tbody>
 </table>
-<h2>O que cada métrica mede</h2><ul><li><b>Acurácia</b>: Proporção de acertos. Pode ser alta mesmo com erros concentrados em um grupo.</li><li><b>Precisão</b>: Dos classificados como renda alta, quantos realmente têm renda alta.</li><li><b>Recall</b>: Das pessoas com renda alta, quantas o modelo reconhece.</li><li><b>F1</b>: Média harmônica de precisão e recall.</li><li><b>AUC</b>: Capacidade de ordenar pessoas por probabilidade; não se aplica ao limiar por grupo, que devolve decisões.</li><li><b>Dif. de paridade demográfica</b>: Diferença entre as taxas de seleção dos grupos (0 = iguais). Ignora se as taxas-base diferem.</li><li><b>Razão de paridade demográfica</b>: Menor taxa de seleção dividida pela maior (1 = iguais).</li><li><b>Dif. de igualdade de oportunidades</b>: Diferença de TPR entre os grupos (0 = iguais).</li><li><b>Dif. de equalized odds</b>: Maior diferença entre grupos em TPR ou FPR (0 = iguais).</li><li><b>Dif. de seleção com sinal</b>: Seleção do grupo de referência menos a do outro grupo; o sinal mostra quem é mais selecionado.</li><li><b>Dif. de TPR com sinal</b>: TPR do grupo de referência menos a do outro grupo.</li></ul>
+<h2>O que cada métrica mede</h2><ul><li><b>Acurácia</b>: Proporção de acertos. Pode ser alta mesmo com erros concentrados em um grupo.</li><li><b>Precisão</b>: Dos classificados como renda alta, quantos realmente têm renda alta.</li><li><b>Recall</b>: Das pessoas com renda alta, quantas o modelo reconhece.</li><li><b>F1</b>: Média harmônica de precisão e recall.</li><li><b>AUC</b>: Capacidade de ordenar pessoas por probabilidade; não se aplica ao limiar por grupo, que devolve decisões.</li><li><b>Dif. de paridade demográfica</b>: Diferença entre as taxas de seleção dos grupos (0 = iguais). Ignora se as taxas-base diferem.</li><li><b>Razão de paridade demográfica</b>: Menor taxa de seleção dividida pela maior (1 = iguais).</li><li><b>Dif. de igualdade de oportunidades</b>: Diferença de TPR entre os grupos (0 = iguais).</li><li><b>Dif. de equalized odds</b>: Maior diferença entre grupos em TPR ou FPR (0 = iguais).</li><li><b>Dif. de seleção com sinal</b>: Seleção do grupo de referência menos a do outro grupo; o sinal mostra quem é mais selecionado.</li><li><b>Dif. de TPR com sinal</b>: TPR do grupo de referência menos a do outro grupo; o sinal mostra qual grupo é mais reconhecido entre quem tem o desfecho positivo. Use junto com a diferença sem sinal, que esconde inversões.</li></ul>
 <h2>Limitações</h2><p>Os resultados descrevem diferenças estatísticas entre grupos; a ferramenta não classifica um modelo como justo ou injusto, nem emite parecer jurídico. A base Adult (Censo dos EUA, 1994) registra o sexo apenas como masculino ou feminino, o que não corresponde à identidade de gênero. Critérios de equidade diferentes podem ser incompatíveis quando as taxas-base dos grupos diferem. As repetições compartilham parte dos dados, o que torna o IC por bootstrap um pouco otimista; o IC pelo t corrigido é mais conservador.</p>
 <h2>Versões</h2><pre>{
-  &quot;python&quot;: &quot;3.13.16&quot;,
+  &quot;python&quot;: &quot;3.13.12&quot;,
   &quot;scikit-learn&quot;: &quot;1.9.1&quot;,
   &quot;fairlearn&quot;: &quot;0.14.0&quot;,
   &quot;pandas&quot;: &quot;3.0.5&quot;,

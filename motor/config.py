@@ -8,7 +8,8 @@ from dataclasses import asdict, dataclass, field
 
 MODELOS = {"regressao_logistica": "Regressão logística", "random_forest": "Random Forest"}
 CENARIOS = {"original": "Original", "reponderacao": "Reponderação", "limiar_por_grupo": "Limiar por grupo"}
-RESTRICOES = {"demographic_parity": "Paridade demográfica", "equalized_odds": "Equalized odds"}
+RESTRICOES = {"demographic_parity": "Paridade demográfica", "equalized_odds": "Equalized odds",
+              "true_positive_rate_parity": "Igualdade de oportunidades (TPR)"}
 
 GRADES_PADRAO = {
     "regressao_logistica": {"C": [0.1, 1.0, 10.0]},
@@ -51,7 +52,7 @@ class Config:
         if any(t not in ("reponderacao", "limiar_por_grupo") for t in self.tecnicas):
             erros.append("Técnica de mitigação desconhecida.")
         if self.restricao not in RESTRICOES:
-            erros.append("Restrição deve ser demographic_parity ou equalized_odds.")
+            erros.append("Restrição deve ser uma de: " + ", ".join(RESTRICOES) + ".")
         if erros:
             raise ValueError(" ".join(erros))
 

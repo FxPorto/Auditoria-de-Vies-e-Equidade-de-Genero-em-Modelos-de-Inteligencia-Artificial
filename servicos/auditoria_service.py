@@ -1,27 +1,34 @@
 """Camada de serviços: valida entradas, coordena o motor e a persistência (Documentação, Seção 3.2)."""
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
-from motor import dados, metricas, protocolo
+from motor import acs, dados, metricas, protocolo
 from motor.config import Config
 from motor.estatistica import resumir
 from motor.sintetico import gerar_adult_sintetico
 from persistencia.repositorio import Repositorio
 
-FONTES = {"adult": "Adult Census Income", "sintetica": "Sintética (somente teste)"}
+FONTES = {"adult": "Adult Census Income", "acsincome": "ACSIncome (ACS PUMS)", "sintetica": "Sintética (somente teste)"}
 
 
 class ServicoAuditoria:
-    def __init__(self, repositorio: Repositorio, caminho_base=dados.CAMINHO_PADRAO):
+    def __init__(self, repositorio: Repositorio, caminho_base=dados.CAMINHO_PADRAO,
+                 acs_estado: str = "CA", acs_ano: int = 2018, caminho_acs=None):
         self.repo = repositorio
         self.caminho_base = caminho_base
+        self.acs_estado, self.acs_ano = acs_estado, int(acs_ano)
+        self.caminho_acs = caminho_acs or acs.caminho_padrao(acs_estado, acs_ano, Path(caminho_base).parent)
 
     # ------------------------------------------------------------------ dados
     def carregar_dados(self, fonte: str, n_sintetico: int = 8000) -> tuple[pd.DataFrame, dict]:
         if fonte == "adult":
             return dados.carregar_base(self.caminho_base)
+        if fonte == "acsincome":
+            return acs.carregar_acsincome(self.acs_estado, self.acs_ano, self.caminho_acs)
         if fonte == "sintetica":
             df = gerar_adult_sintetico(n_sintetico, seed=0, vies=1.0)
             return df, {"origem": "sintética (somente teste)", "hash": dados.hash_dataframe(df),
@@ -35,7 +42,8 @@ class ServicoAuditoria:
             df, info = self.carregar_dados(fonte)
         X, y, s = dados.preparar(df, cfg)
         res = protocolo.executar_protocolo(X, y, s, cfg, info, progresso)
-        res["id"] = self.repo.salvar(res, "treino", FONTES.get(fonte, fonte))
+        rotulo = (f"ACSIncome {self.acs_estado} {self.acs_ano}" if fonte == "acsincome" else FONTES.get(fonte, fonte))
+        res["id"] = self.repo.salvar(res, "treino", rotulo)
         return res
 
     # ------------------------------------------------------------------ importação (UC04)

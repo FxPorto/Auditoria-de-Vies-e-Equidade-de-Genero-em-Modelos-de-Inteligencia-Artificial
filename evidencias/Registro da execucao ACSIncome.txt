@@ -1,0 +1,55 @@
+﻿REGISTRO DA REPLICACAO ACSINCOME CA 2018
+
+Execucao: 85735cbc9a
+Data registrada: 28/10/2026 01:54:37, horario de Brasilia
+Base: ACSIncome, ACS PUMS 2018, 1 ano, California
+Registros: 195665
+Sementes: 0 a 19 (20 repeticoes)
+Divisao: 60% treino, 20% validacao, 20% teste
+Restricao do limiar: demographic_parity
+Sexo como variavel de entrada: nao
+Hash SHA-256 da base: ef4850b1d74f42bb069eb292dc5b1abaea5193ea8e186a1e27417ce35b4577ef
+
+TEMPO
+Tempo da execucao informado no terminal pelo usuario: 98,5 minutos (1 h 38 min 30 s).
+Soma dos tempos das sementes em execucao.json: 5889.389 segundos (98.156 minutos).
+Media por semente: 294.469 segundos.
+O valor do terminal inclui mais etapas que a soma isolada das sementes.
+As analises extras foram executadas depois; seu tempo nao foi registrado neste arquivo.
+
+NOTEBOOK
+Processador: 13th Gen Intel(R) Core(TM) i5-13420H
+Nucleos fisicos: 8
+Processadores logicos: 12
+RAM fisica visivel ao Windows: 15.67 GiB (16824262656 bytes), compativel com 16 GB nominais.
+Sistema: Windows 11 Home Single Language, versao 26H2, build 26300, arquitetura AMD64.
+Informacoes do hardware consultadas no notebook em 28/10/2026.
+
+VERSOES REGISTRADAS NA EXECUCAO
+python: 3.13.12
+scikit-learn: 1.9.1
+fairlearn: 0.14.0
+pandas: 3.0.5
+numpy: 2.5.3
+
+CONFERENCIAS DA ENTREGA
+Todas as 8 checagens em sanidade.csv estao OK.
+Hash da base coincide com execucao.json e com o arquivo .sha256 registrado.
+Hash do arquivo previsoes.csv.gz coincide com o registro da execucao.
+Os seis arquivos esperados de analises extras estao presentes.
+Este registro nao representa uma nova execucao dos modelos nem uma recalculacao completa das metricas.
+
+ESCOPO DO PACOTE
+Inclui somente a replicacao completa acs_ca_2018, suas analises extras,
+a evidencia de validacao, o hash da base e este registro de maquina e tempo.
+Nao inclui piloto, microdados CSV, codigo-fonte nem resultados anteriores da Adult.
+O CSV da base permanece em dados/acsincome_CA_2018.csv no projeto e precisa
+ser versionado junto com o hash e os resultados no repositorio do grupo.
+
+PENDENCIAS DE DOCUMENTACAO E VERSIONAMENTO
+A pasta local usada nesta execucao nao contem .git.
+O DECISOES.md consultado ainda nao contem D15. O grupo deve registrar a decisao
+ACSIncome CA 2018 como analise complementar, com data e responsavel verdadeiros.
+Nao foi criado commit nem enviado qualquer arquivo ao GitHub ou a terceiros.
+O arquivo de previsoes tem 46.67 MB decimais,
+abaixo de 100 MB; nenhum arquivo deste experimento excede esse valor.

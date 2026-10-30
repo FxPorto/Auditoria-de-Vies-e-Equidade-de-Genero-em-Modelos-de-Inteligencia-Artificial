@@ -4,6 +4,7 @@ Exemplos (na raiz do projeto):
     python scripts/validar_base.py                        # valida dados/adult.csv (baixa se faltar)
     python scripts/validar_base.py --registrar            # valida e registra o hash oficial (só a 1ª vez)
     python scripts/validar_base.py --caminho outra.csv    # confere outro arquivo, sem baixar nada
+    python scripts/validar_base.py --base acsincome --estado CA --ano 2018 [--registrar]   # replicação ACSIncome
 
 Mostra as checagens (OK / ALERTA / FALHA / INFO) e o hash SHA-256, e grava o mesmo texto em
 evidencias/validacao_base.txt. Termina com código 1 se houver FALHA.
@@ -20,26 +21,36 @@ sys.path.insert(0, str(RAIZ))
 import pandas as pd  # noqa: E402
 
 from motor.dados import ID_OPENML_ADULT, baixar_adult  # noqa: E402
-from servicos.validacao_base import arquivo_hash, conferir_hash, registrar_hash, validar  # noqa: E402
+from motor import acs  # noqa: E402
+from servicos.validacao_base import arquivo_hash, conferir_hash, registrar_hash, validar, validar_acs  # noqa: E402
 
 PADRAO = RAIZ / "dados" / "adult.csv"
 
 
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--caminho", default=str(PADRAO), help="arquivo a validar (padrão: dados/adult.csv)")
+    p.add_argument("--base", choices=["adult", "acsincome"], default="adult")
+    p.add_argument("--estado", default="CA", help="ACSIncome: sigla do estado (padrão CA)")
+    p.add_argument("--ano", type=int, default=2018, help="ACSIncome: ano do ACS PUMS (padrão 2018)")
+    p.add_argument("--caminho", default=None, help="arquivo a validar (padrão: dados/adult.csv)")
     p.add_argument("--registrar", action="store_true",
                    help="grava o hash em <arquivo>.sha256 (fazer uma vez e versionar no git)")
-    p.add_argument("--evidencia", default=str(RAIZ / "evidencias" / "validacao_base.txt"))
+    p.add_argument("--evidencia", default=None, help="padrão: evidencias/validacao_<base>.txt")
     a = p.parse_args(argv)
 
-    caminho = Path(a.caminho)
     linhas: list[str] = []
-
-    def dizer(txt=""):
-        print(txt)
-        linhas.append(txt)
-
+    if a.base == "acsincome":
+        caminho = Path(a.caminho) if a.caminho else acs.caminho_padrao(a.estado, a.ano, RAIZ / "dados")
+        if not caminho.exists():
+            print(f"Baixando o ACS PUMS {a.ano} de {a.estado.upper()} (pode levar alguns minutos)...")
+        try:
+            df_acs, _ = acs.carregar_acsincome(a.estado, a.ano, caminho)
+        except Exception as e:  # EX01
+            print(f"Não foi possível obter a base: {e}")
+            return 1
+        checks = validar_acs(df_acs, acs.REGISTROS_CONHECIDOS.get((a.estado.upper(), a.ano)))
+        return _concluir(caminho, checks, a, linhas)
+    caminho = Path(a.caminho) if a.caminho else PADRAO
     if not caminho.exists():
         if caminho.resolve() != PADRAO.resolve():
             print(f"Arquivo não encontrado: {caminho}")
@@ -54,6 +65,14 @@ def main(argv=None) -> int:
 
     bruto = pd.read_csv(caminho, na_values=["?"], skipinitialspace=True)
     checks = validar(bruto)
+    return _concluir(caminho, checks, a, linhas)
+
+
+def _concluir(caminho, checks, a, linhas) -> int:
+    def dizer(txt=""):
+        print(txt)
+        linhas.append(txt)
+
     dizer(f"Arquivo: {caminho}")
     dizer()
     for c in checks:
@@ -81,7 +100,7 @@ def main(argv=None) -> int:
         dizer("[OK    ] Hash igual ao registrado: é a mesma base do grupo.")
     else:
         dizer(f"[FALHA ] Hash diferente do registrado ({registrado[:16]}...). "
-              "Não é a base do grupo: use a do repositório (git checkout -- dados/adult.csv).")
+              f"Não é a base do grupo: use a do repositório (git checkout -- dados/{Path(caminho).name}).")
         falhas.append({"verificacao": "hash"})
 
     dizer()
@@ -92,7 +111,8 @@ def main(argv=None) -> int:
     else:
         dizer("Resultado: base validada. Pode seguir para o piloto.")
 
-    ev = Path(a.evidencia)
+    ev = Path(a.evidencia) if a.evidencia else RAIZ / "evidencias" / (
+        "validacao_base.txt" if a.base == "adult" else f"validacao_acsincome_{a.estado.upper()}_{a.ano}.txt")
     ev.parent.mkdir(parents=True, exist_ok=True)
     ev.write_text("\n".join(linhas) + "\n", encoding="utf-8")
     print(f"\n(Evidência gravada em {ev})")

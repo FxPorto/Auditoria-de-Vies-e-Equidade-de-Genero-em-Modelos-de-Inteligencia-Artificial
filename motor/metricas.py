@@ -22,7 +22,7 @@ DESCRICOES = {
     "dif_ig_oport": ("Dif. de igualdade de oportunidades", "Diferença de TPR entre os grupos (0 = iguais)."),
     "dif_equalized_odds": ("Dif. de equalized odds", "Maior diferença entre grupos em TPR ou FPR (0 = iguais)."),
     "dif_paridade_assinada": ("Dif. de seleção com sinal", "Seleção do grupo de referência menos a do outro grupo; o sinal mostra quem é mais selecionado."),
-    "dif_ig_oport_assinada": ("Dif. de TPR com sinal", "TPR do grupo de referência menos a do outro grupo."),
+    "dif_ig_oport_assinada": ("Dif. de TPR com sinal", "TPR do grupo de referência menos a do outro grupo; o sinal mostra qual grupo é mais reconhecido entre quem tem o desfecho positivo. Use junto com a diferença sem sinal, que esconde inversões."),
 }
 
 METRICAS_PRINCIPAIS = ["acuracia", "precisao", "recall", "f1", "auc", "dif_paridade", "razao_paridade",

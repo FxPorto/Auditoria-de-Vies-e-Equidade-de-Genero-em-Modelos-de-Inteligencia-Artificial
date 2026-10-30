@@ -1,0 +1,15 @@
+Arquivo: C:\Users\Lenovo\Downloads\painel-auditoria-v3\painel-auditoria\dados\acsincome_CA_2018.csv
+
+[OK    ] Colunas: todas presentes  (esperado: 10 variáveis + income)
+[OK    ] Número de registros: 195665  (esperado: cerca de 195.665)
+[OK    ] Alvo (income) com duas classes: [0, 1]  (esperado: [0, 1] (> US$ 50 mil = 1))
+[OK    ] Sexo registrado: Female, Male  (esperado: Female, Male)
+[OK    ] Filtro do ACSIncome (idade > 16 e horas > 0): idade mín. 17; horas mín. 1  (esperado: idade ≥ 17 e horas ≥ 1)
+[INFO  ] Proporção com renda alta: 0,411  (esperado: anotar no artigo)
+[INFO  ] Proporção de homens: 0,528  (esperado: anotar no artigo)
+[INFO  ] Taxa-base homens / mulheres: 0,466 / 0,349  (esperado: anotar no artigo)
+
+Hash SHA-256: ef4850b1d74f42bb069eb292dc5b1abaea5193ea8e186a1e27417ce35b4577ef
+[OK    ] Hash registrado em acsincome_CA_2018.sha256. Façam commit deste arquivo junto com a base.
+
+Resultado: base validada. Pode seguir para o piloto.

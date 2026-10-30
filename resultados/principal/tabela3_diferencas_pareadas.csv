@@ -6,6 +6,7 @@ P2;Regressão logística: Reponderação − Original;Dif. de paridade demográf
 P2;Regressão logística: Reponderação − Original;Dif. de igualdade de oportunidades;0,0259;-0,0003 a 0,0516;-0,0528 a 0,1047;não / não;—
 P2;Regressão logística: Reponderação − Original;Dif. de equalized odds;0,0230;-0,0013 a 0,0459;-0,0495 a 0,0956;não / não;—
 P2;Regressão logística: Reponderação − Original;Dif. de seleção com sinal;-0,0873;-0,0889 a -0,0858;-0,0922 a -0,0825;sim / sim;sim
+P2;Regressão logística: Reponderação − Original;Dif. de TPR com sinal;-0,2458;-0,2553 a -0,2360;-0,2748 a -0,2167;sim / sim;—
 P3;Regressão logística: Limiar por grupo − Original;Acurácia;-0,0190;-0,0204 a -0,0176;-0,0232 a -0,0148;sim / sim;sim
 P3;Regressão logística: Limiar por grupo − Original;F1;-0,0809;-0,0875 a -0,0746;-0,1002 a -0,0617;sim / sim;—
 P3;Regressão logística: Limiar por grupo − Original;AUC;—;— a —;— a —;não / não;—
@@ -13,6 +14,7 @@ P3;Regressão logística: Limiar por grupo − Original;Dif. de paridade demogr�
 P3;Regressão logística: Limiar por grupo − Original;Dif. de igualdade de oportunidades;0,2119;0,1851 a 0,2388;0,1320 a 0,2917;sim / sim;—
 P3;Regressão logística: Limiar por grupo − Original;Dif. de equalized odds;0,2090;0,1837 a 0,2344;0,1339 a 0,2841;sim / sim;—
 P3;Regressão logística: Limiar por grupo − Original;Dif. de seleção com sinal;-0,1748;-0,1780 a -0,1711;-0,1853 a -0,1642;sim / sim;sim
+P3;Regressão logística: Limiar por grupo − Original;Dif. de TPR com sinal;-0,4317;-0,4470 a -0,4171;-0,4756 a -0,3878;sim / sim;—
 P3;Regressão logística: Limiar por grupo − Reponderação;Acurácia;-0,0135;-0,0144 a -0,0125;-0,0163 a -0,0106;sim / sim;sim
 P3;Regressão logística: Limiar por grupo − Reponderação;F1;-0,0580;-0,0640 a -0,0523;-0,0757 a -0,0404;sim / sim;—
 P3;Regressão logística: Limiar por grupo − Reponderação;AUC;—;— a —;— a —;não / não;—
@@ -20,6 +22,7 @@ P3;Regressão logística: Limiar por grupo − Reponderação;Dif. de paridade d
 P3;Regressão logística: Limiar por grupo − Reponderação;Dif. de igualdade de oportunidades;0,1859;0,1749 a 0,1965;0,1529 a 0,2190;sim / sim;—
 P3;Regressão logística: Limiar por grupo − Reponderação;Dif. de equalized odds;0,1859;0,1749 a 0,1965;0,1529 a 0,2190;sim / sim;—
 P3;Regressão logística: Limiar por grupo − Reponderação;Dif. de seleção com sinal;-0,0874;-0,0909 a -0,0838;-0,0981 a -0,0768;sim / sim;sim
+P3;Regressão logística: Limiar por grupo − Reponderação;Dif. de TPR com sinal;-0,1859;-0,1965 a -0,1749;-0,2190 a -0,1529;sim / sim;—
 P2;Random Forest: Reponderação − Original;Acurácia;-0,0042;-0,0051 a -0,0033;-0,0069 a -0,0015;sim / sim;não
 P2;Random Forest: Reponderação − Original;F1;-0,0183;-0,0209 a -0,0158;-0,0260 a -0,0106;sim / sim;—
 P2;Random Forest: Reponderação − Original;AUC;-0,0031;-0,0034 a -0,0027;-0,0043 a -0,0019;sim / sim;—
@@ -27,6 +30,7 @@ P2;Random Forest: Reponderação − Original;Dif. de paridade demográfica;-0,0
 P2;Random Forest: Reponderação − Original;Dif. de igualdade de oportunidades;0,0017;-0,0231 a 0,0283;-0,0775 a 0,0809;não / não;—
 P2;Random Forest: Reponderação − Original;Dif. de equalized odds;0,0006;-0,0236 a 0,0261;-0,0760 a 0,0771;não / não;—
 P2;Random Forest: Reponderação − Original;Dif. de seleção com sinal;-0,0695;-0,0728 a -0,0664;-0,0786 a -0,0603;sim / sim;sim
+P2;Random Forest: Reponderação − Original;Dif. de TPR com sinal;-0,2071;-0,2188 a -0,1966;-0,2412 a -0,1731;sim / sim;—
 P3;Random Forest: Limiar por grupo − Original;Acurácia;-0,0183;-0,0196 a -0,0169;-0,0225 a -0,0141;sim / sim;sim
 P3;Random Forest: Limiar por grupo − Original;F1;-0,0510;-0,0549 a -0,0466;-0,0634 a -0,0386;sim / sim;—
 P3;Random Forest: Limiar por grupo − Original;AUC;—;— a —;— a —;não / não;—
@@ -34,6 +38,7 @@ P3;Random Forest: Limiar por grupo − Original;Dif. de paridade demográfica;-0
 P3;Random Forest: Limiar por grupo − Original;Dif. de igualdade de oportunidades;0,2023;0,1780 a 0,2253;0,1308 a 0,2738;sim / sim;—
 P3;Random Forest: Limiar por grupo − Original;Dif. de equalized odds;0,2011;0,1775 a 0,2238;0,1317 a 0,2705;sim / sim;—
 P3;Random Forest: Limiar por grupo − Original;Dif. de seleção com sinal;-0,1596;-0,1641 a -0,1549;-0,1737 a -0,1455;sim / sim;sim
+P3;Random Forest: Limiar por grupo − Original;Dif. de TPR com sinal;-0,4077;-0,4220 a -0,3927;-0,4518 a -0,3637;sim / sim;—
 P3;Random Forest: Limiar por grupo − Reponderação;Acurácia;-0,0141;-0,0150 a -0,0131;-0,0170 a -0,0111;sim / sim;sim
 P3;Random Forest: Limiar por grupo − Reponderação;F1;-0,0327;-0,0373 a -0,0282;-0,0462 a -0,0192;sim / sim;—
 P3;Random Forest: Limiar por grupo − Reponderação;AUC;—;— a —;— a —;não / não;—
@@ -41,6 +46,7 @@ P3;Random Forest: Limiar por grupo − Reponderação;Dif. de paridade demográf
 P3;Random Forest: Limiar por grupo − Reponderação;Dif. de igualdade de oportunidades;0,2006;0,1897 a 0,2115;0,1664 a 0,2348;sim / sim;—
 P3;Random Forest: Limiar por grupo − Reponderação;Dif. de equalized odds;0,2006;0,1897 a 0,2115;0,1664 a 0,2348;sim / sim;—
 P3;Random Forest: Limiar por grupo − Reponderação;Dif. de seleção com sinal;-0,0902;-0,0936 a -0,0864;-0,1011 a -0,0793;sim / sim;sim
+P3;Random Forest: Limiar por grupo − Reponderação;Dif. de TPR com sinal;-0,2006;-0,2115 a -0,1897;-0,2348 a -0,1664;sim / sim;—
 P4;Original: Random Forest − Regressão logística;Acurácia;0,0136;0,0128 a 0,0145;0,0109 a 0,0162;sim / sim;sim
 P4;Original: Random Forest − Regressão logística;F1;0,0223;0,0201 a 0,0247;0,0153 a 0,0293;sim / sim;—
 P4;Original: Random Forest − Regressão logística;AUC;0,0138;0,0133 a 0,0142;0,0124 a 0,0151;sim / sim;—
@@ -48,6 +54,7 @@ P4;Original: Random Forest − Regressão logística;Dif. de paridade demográfi
 P4;Original: Random Forest − Regressão logística;Dif. de igualdade de oportunidades;-0,0072;-0,0142 a -0,0004;-0,0283 a 0,0139;sim / não;—
 P4;Original: Random Forest − Regressão logística;Dif. de equalized odds;-0,0089;-0,0160 a -0,0020;-0,0304 a 0,0126;sim / não;—
 P4;Original: Random Forest − Regressão logística;Dif. de seleção com sinal;-0,0138;-0,0155 a -0,0120;-0,0191 a -0,0084;sim / sim;não
+P4;Original: Random Forest − Regressão logística;Dif. de TPR com sinal;-0,0072;-0,0142 a -0,0004;-0,0283 a 0,0139;sim / não;—
 P4;Reponderação: Random Forest − Regressão logística;Acurácia;0,0149;0,0141 a 0,0158;0,0123 a 0,0175;sim / sim;sim
 P4;Reponderação: Random Forest − Regressão logística;F1;0,0269;0,0248 a 0,0293;0,0199 a 0,0339;sim / sim;—
 P4;Reponderação: Random Forest − Regressão logística;AUC;0,0157;0,0152 a 0,0162;0,0142 a 0,0172;sim / sim;—
@@ -55,6 +62,7 @@ P4;Reponderação: Random Forest − Regressão logística;Dif. de paridade demo
 P4;Reponderação: Random Forest − Regressão logística;Dif. de igualdade de oportunidades;-0,0314;-0,0427 a -0,0208;-0,0652 a 0,0024;sim / não;—
 P4;Reponderação: Random Forest − Regressão logística;Dif. de equalized odds;-0,0314;-0,0427 a -0,0208;-0,0652 a 0,0024;sim / não;—
 P4;Reponderação: Random Forest − Regressão logística;Dif. de seleção com sinal;0,0041;0,0012 a 0,0068;-0,0047 a 0,0129;sim / não;não
+P4;Reponderação: Random Forest − Regressão logística;Dif. de TPR com sinal;0,0314;0,0208 a 0,0427;-0,0024 a 0,0652;sim / não;—
 P4;Limiar por grupo: Random Forest − Regressão logística;Acurácia;0,0143;0,0133 a 0,0153;0,0113 a 0,0173;sim / sim;sim
 P4;Limiar por grupo: Random Forest − Regressão logística;F1;0,0523;0,0453 a 0,0590;0,0315 a 0,0731;sim / sim;—
 P4;Limiar por grupo: Random Forest − Regressão logística;AUC;—;— a —;— a —;não / não;—
@@ -62,3 +70,4 @@ P4;Limiar por grupo: Random Forest − Regressão logística;Dif. de paridade de
 P4;Limiar por grupo: Random Forest − Regressão logística;Dif. de igualdade de oportunidades;-0,0168;-0,0264 a -0,0072;-0,0455 a 0,0120;sim / não;—
 P4;Limiar por grupo: Random Forest − Regressão logística;Dif. de equalized odds;-0,0168;-0,0264 a -0,0072;-0,0455 a 0,0120;sim / não;—
 P4;Limiar por grupo: Random Forest − Regressão logística;Dif. de seleção com sinal;0,0013;-0,0016 a 0,0044;-0,0075 a 0,0102;não / não;não
+P4;Limiar por grupo: Random Forest − Regressão logística;Dif. de TPR com sinal;0,0168;0,0072 a 0,0264;-0,0120 a 0,0455;sim / não;—

@@ -4,3 +4,6 @@ __pycache__
 execucoes
 resultados
 *.pyc
+.venv
+**/.venv
+evidencias

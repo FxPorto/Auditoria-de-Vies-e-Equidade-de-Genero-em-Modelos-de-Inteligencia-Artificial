@@ -1,0 +1,16 @@
+ATUALIZAÇÃO DO REPOSITÓRIO PARA A RELEASE v1.1
+
+1. Extraia este zip na RAIZ do repositório (onde estão README.md, motor/, scripts/...) e aceite substituir os arquivos.
+   - Código: motor/, persistencia/, scripts/, servicos/, tests/test_acs.py
+   - README.md (seção 3.3 do ACSIncome), .dockerignore e DECISOES.md (D13 a D15)
+   - resultados/principal: troca a execução 2cdb13cafd pela 5162e18bb3 (mesmos números,
+     com a diferença de TPR com sinal na Tabela 3, como no artigo)
+2. Copie da máquina da Grazielle para a pasta dados/:
+   - dados/acsincome_CA_2018.csv
+   - dados/acsincome_CA_2018.sha256 (se não existir, rode:
+     python scripts/validar_base.py --base acsincome --estado CA --ano 2018 --registrar
+     e confira se o hash começa com ef4850b1d74f42bb)
+3. Rode: python -m pytest -q   ->  esperado: 23 passed
+4. git add . ; git commit -m "v1.1: código das análises complementares e do ACSIncome" ; git push
+5. No GitHub: Releases -> Draft a new release -> tag v1.1 -> Publish release.
+6. No Zenodo aparece a nova versão com OUTRO DOI. Esse é o DOI que vai no artigo.

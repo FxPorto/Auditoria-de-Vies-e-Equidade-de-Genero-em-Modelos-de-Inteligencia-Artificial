@@ -1,0 +1,112 @@
+[
+  {
+    "arquivo": "resultados/acs_ca_2018/agregado_completo.csv",
+    "bytes": 17594,
+    "sha256": "ec0e8b9d7e37d182af8f585cffcb34b55fc99efa913df527ccf5b08206fa70b2"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/execucao.json",
+    "bytes": 245258,
+    "sha256": "2b1cc8db0d1ca1024e4c8f43512721623ce5ccc09a886a03679127692ade21ff"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/extras/brier_por_grupo.csv",
+    "bytes": 527,
+    "sha256": "4277c00e8b39793b5775a088716a72a69452092f0ca32bc00bcc72dbbc2f9ae8"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/extras/calibracao.csv",
+    "bytes": 5244,
+    "sha256": "918225ec2b066b49698104c211282aaac88d36604f3c9c166d12681210ff6678"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/extras/calibracao.png",
+    "bytes": 186403,
+    "sha256": "609d2d0e7854f5077cca0464cc5f65c60f2796334e22f2d90c06759630ebf07e"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/extras/fronteira.csv",
+    "bytes": 2192,
+    "sha256": "564565de9be962ee812e3735663381633d47a9d438ae623d07dd1d3222ce62ab"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/extras/fronteira.png",
+    "bytes": 82656,
+    "sha256": "6c5b39d9923287f9f9410fb3661546d680757946c7c8f2f91663deab1550bf58"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/extras/interseccional.csv",
+    "bytes": 15684,
+    "sha256": "e9e50aa7ee5cf9469bb76fadd3884f3f7449948b081ac28dcf26edbda5880187"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/figura_tradeoff.pdf",
+    "bytes": 20044,
+    "sha256": "09ed794a4453acffa44b9cfa04ac729093507373cf70b2a6ff1efc762d3d7727"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/figura_tradeoff.png",
+    "bytes": 90379,
+    "sha256": "fc328ed3238cd9c62bf77bf53da59a3c63cfdb3d2190325687a42c72282f71e1"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/pareado_completo.csv",
+    "bytes": 14910,
+    "sha256": "bcf888787a4032ce7693807e2c78b827cffc925408883436f69ba20b6bdca704"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/por_semente.csv",
+    "bytes": 62786,
+    "sha256": "ae0707543c01c8db1e1d5d5ce267eeb79675aba2dd757deeb5e5957aa1545025"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/previsoes.csv.gz",
+    "bytes": 46665050,
+    "sha256": "58b73c21b7c2b8e7ae8e538041e93dee4956d08af4ec11e841f1ccf9b8e3417e"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/relatorio.html",
+    "bytes": 151117,
+    "sha256": "3b5d746bd5bcaf0260413b5fe75ab1d0ebd7625d91cb47eb8b272a5f4323bc9e"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/sanidade.csv",
+    "bytes": 593,
+    "sha256": "0a7ce509da4c593497466269088e1b1e599b32396992d8a27c9b438b514f07e3"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/tabela1_formatada.csv",
+    "bytes": 1408,
+    "sha256": "6e115e7323c23df715d3eff07925ae74f9a26858a0d727c8963ba050cf5643bd"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/tabela1_numerica.csv",
+    "bytes": 4536,
+    "sha256": "6748f7c8ee25e67d032ed38fcc3314897df0cb2966aed35e9a9e4b1b9c91cb49"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/tabela2_por_grupo.csv",
+    "bytes": 1592,
+    "sha256": "496cbcd63cf8754b5562901553c0cbb315d1c5fcb4849eb276cebc27fa2dd5cc"
+  },
+  {
+    "arquivo": "resultados/acs_ca_2018/tabela3_diferencas_pareadas.csv",
+    "bytes": 9589,
+    "sha256": "edea32b795a3af44bc1268b269fbbbc0bfe4d184bedaf2a2cf0527835b169ad4"
+  },
+  {
+    "arquivo": "evidencias/validacao_acsincome_CA_2018.txt",
+    "bytes": 988,
+    "sha256": "7562761e1d878807c081ce601d376442346bf32efaf037f75a15af08b0b34129"
+  },
+  {
+    "arquivo": "dados/acsincome_CA_2018.sha256",
+    "bytes": 88,
+    "sha256": "738e3d9ea046aac8526af7b2baa9c05a8184db3bed10027f9d55c7048bb6f189"
+  },
+  {
+    "arquivo": "Registro da execucao ACSIncome.txt",
+    "bytes": 2557,
+    "sha256": "0d85381b72c2ae7c71508c8244a3e7f43a710b108c88ec1cb985903ad7201a6a"
+  }
+]

@@ -10,7 +10,7 @@ import pandas as pd
 from motor.config import CENARIOS, MODELOS
 from motor.metricas import DESCRICOES
 
-COLUNAS_T1 = ["acuracia", "f1", "auc", "dif_paridade", "razao_paridade", "dif_ig_oport", "dif_equalized_odds"]
+COLUNAS_T1 = ["acuracia", "f1", "auc", "dif_paridade", "razao_paridade", "dif_ig_oport", "dif_ig_oport_assinada", "dif_equalized_odds"]
 COR_MODELO = {"regressao_logistica": "#2a78d6", "random_forest": "#eb6834"}   # validadas (dataviz)
 MARCADOR = {"original": "o", "reponderacao": "s", "limiar_por_grupo": "^", "importado": "D"}
 TINTA, TINTA2, GRADE = "#0b0b0b", "#52514e", "#e4e3df"

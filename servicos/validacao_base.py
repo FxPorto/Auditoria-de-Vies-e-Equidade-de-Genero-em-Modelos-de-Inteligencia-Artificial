@@ -114,3 +114,38 @@ def registrar_hash(caminho: str | Path) -> str:
 def conferir_hash(caminho: str | Path) -> tuple[str, str | None]:
     """Devolve (hash atual, hash registrado ou None)."""
     return hash_arquivo(caminho), hash_registrado(caminho)
+
+
+COLUNAS_ACS = ["age", "workclass", "education-num", "marital-status", "occupation", "place-of-birth",
+               "relationship", "hours-per-week", "sex", "race", "income"]
+
+
+def validar_acs(df: pd.DataFrame, registros_esperados: int | None = None) -> list[dict]:
+    """Checagens da base ACSIncome já preparada (motor.acs). Referências amplas: a base varia por estado e ano."""
+    out: list[dict] = []
+    faltam = [c for c in COLUNAS_ACS if c not in df.columns]
+    _item(out, "Colunas", "todas presentes" if not faltam else f"faltam: {', '.join(faltam)}",
+          "FALHA" if faltam else "OK", "10 variáveis + income", "Apague o CSV e gere de novo pelo script." if faltam else "")
+    if faltam:
+        return out
+    n = len(df)
+    if registros_esperados:
+        ok = abs(n - registros_esperados) <= 0.01 * registros_esperados
+        _item(out, "Número de registros", n, "OK" if ok else "ALERTA", f"cerca de {registros_esperados:,}".replace(",", "."))
+    else:
+        _item(out, "Número de registros", n, "INFO", "varia por estado e ano")
+    classes = sorted(df["income"].unique().tolist())
+    _item(out, "Alvo (income) com duas classes", str(classes), "OK" if classes == [0, 1] else "FALHA", "[0, 1] (> US$ 50 mil = 1)")
+    sexos = sorted(df["sex"].dropna().unique().tolist())
+    _item(out, "Sexo registrado", ", ".join(sexos), "OK" if sexos == ["Female", "Male"] else "FALHA", "Female, Male")
+    idade = pd.to_numeric(df["age"], errors="coerce")
+    horas = pd.to_numeric(df["hours-per-week"], errors="coerce")
+    _item(out, "Filtro do ACSIncome (idade > 16 e horas > 0)", f"idade mín. {idade.min():.0f}; horas mín. {horas.min():.0f}",
+          "OK" if idade.min() > 16 and horas.min() > 0 else "FALHA", "idade ≥ 17 e horas ≥ 1")
+    if classes == [0, 1] and sexos == ["Female", "Male"]:
+        taxa = df.groupby("sex")["income"].mean()
+        _item(out, "Proporção com renda alta", f"{df['income'].mean():.3f}".replace(".", ","), "INFO", "anotar no artigo")
+        _item(out, "Proporção de homens", f"{(df['sex'] == 'Male').mean():.3f}".replace(".", ","), "INFO", "anotar no artigo")
+        _item(out, "Taxa-base homens / mulheres", f"{taxa['Male']:.3f} / {taxa['Female']:.3f}".replace(".", ","), "INFO",
+              "anotar no artigo")
+    return out

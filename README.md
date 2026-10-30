@@ -26,7 +26,7 @@ pip install -r requirements.txt
 python -m pytest -q
 ```
 
-Os 21 testes cobrem T01 a T10 do plano de testes, além de persistência, modo Avaliador, importação e validação da base.
+Os 23 testes cobrem T01 a T10 do plano de testes, além de persistência, modo Avaliador, importação e validação da base.
 Todos precisam passar antes de rodar na base real.
 
 | Teste | Arquivo | O que garante |
@@ -72,10 +72,41 @@ python scripts/rodar_experimento.py --nome principal
 python scripts/rodar_experimento.py --restricao equalized_odds --nome robustez_eo
 python scripts/rodar_experimento.py --usar-sexo --nome robustez_com_sexo
 python scripts/rodar_experimento.py --sementes 10 --nome estabilidade_10
+
+# 5) testes complementares
+python scripts/rodar_experimento.py --restricao true_positive_rate_parity --nome limiar_tpr
+python scripts/rodar_experimento.py --remover-colunas relationship,marital-status --nome sem_proxies
+python scripts/analises_extras.py --nome principal   # sexo × raça, calibração e fronteira, sem treinar de novo
 ```
 
 Tempo de referência: cerca de 40 s por semente em uma máquina de 2 núcleos, ou seja, 15 a 30 minutos
 para as 20 sementes. Anotem o tempo real e a configuração da máquina para o RNF03.
+
+### 3.3 Replicação no ACSIncome (dados mais recentes)
+
+O ACSIncome (DING et al., 2021) é a versão moderna da Adult, construída com os microdados do American Community
+Survey. O sistema baixa o arquivo do Census Bureau, aplica a mesma definição do pacote folktables (idade > 16,
+renda > US$ 100, horas > 0; alvo: renda > US$ 50 mil) e dá às colunas os nomes equivalentes da Adult
+(`relationship`, `marital-status`, `race` etc.), para que todas as opções funcionem igual.
+
+```bash
+# 1) baixar, validar e registrar o hash (uma vez; o arquivo de CA tem cerca de 100 MB)
+python scripts/validar_base.py --base acsincome --estado CA --ano 2018
+python scripts/validar_base.py --base acsincome --estado CA --ano 2018 --registrar
+
+# 2) piloto e replicação (mesmo protocolo do principal)
+python scripts/rodar_experimento.py --fonte acsincome --estado CA --ano 2018 --sementes 2 --nome acs_piloto
+python scripts/rodar_experimento.py --fonte acsincome --estado CA --ano 2018 --nome acs_ca_2018
+
+# 3) opcional: sem os proxies e análises extras
+python scripts/rodar_experimento.py --fonte acsincome --estado CA --ano 2018 --remover-colunas relationship,marital-status --nome acs_ca_2018_sem_proxies
+python scripts/analises_extras.py --fonte acsincome --estado CA --ano 2018 --nome acs_ca_2018
+```
+
+A base de CA 2018 tem cerca de 195 mil registros (4 vezes a Adult), então cada repetição demora bem mais.
+Rodem o piloto primeiro e multipliquem o tempo por semente por 20. Variáveis: `age` (AGEP), `workclass` (COW),
+`education-num` (SCHL), `marital-status` (MAR), `occupation` (OCCP), `place-of-birth` (POBP),
+`relationship` (RELP), `hours-per-week` (WKHP), `sex` (SEX), `race` (RAC1P).
 
 ### O que sai em `resultados/<nome>/`
 
@@ -149,8 +180,10 @@ motor/metricas.py                 Métricas de desempenho, por grupo e de equida
 motor/estatistica.py              Média, desvio-padrão, IC 95% e diferenças pareadas
 motor/protocolo.py                Divisão 60/20/20, laço de sementes e agregação
 motor/sintetico.py                Base sintética para testes
+motor/acs.py                      Base ACSIncome (download do ACS PUMS e definição do folktables)
 persistencia/repositorio.py       SQLite (tabela execucoes) e arquivos de previsões
 scripts/rodar_experimento.py      Linha de comando para o experimento do artigo
 scripts/validar_base.py           Linha de comando para validar a base e registrar o hash
+scripts/analises_extras.py        Análises complementares a partir das previsões gravadas
 tests/                            Testes T01 a T10, persistência e validação da base
 ```

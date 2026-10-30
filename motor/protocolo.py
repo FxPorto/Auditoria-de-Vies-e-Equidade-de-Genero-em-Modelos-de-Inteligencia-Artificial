@@ -19,7 +19,7 @@ from . import estatistica, metricas, mitigacao, modelos
 from .config import Config
 
 METRICAS_COMPARADAS = ["acuracia", "f1", "auc", "dif_paridade", "dif_ig_oport", "dif_equalized_odds",
-                       "dif_paridade_assinada"]
+                       "dif_paridade_assinada", "dif_ig_oport_assinada"]
 
 
 def versoes() -> dict:

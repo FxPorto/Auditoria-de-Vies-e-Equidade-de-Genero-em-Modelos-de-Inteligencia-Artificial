@@ -1,4 +1,4 @@
-Arquivo: C:\Users\F3\Downloads\painel-auditoria-v2\painel-auditoria\dados\adult.csv
+Arquivo: C:\GitHub\Auditoria-de-Vies-e-Equidade-de-Genero-em-Modelos-de-Inteligencia-Artificial\dados\adult.csv
 
 [OK    ] Número de registros: 48842  (esperado: 48.842)
 [OK    ] Colunas: todas presentes  (esperado: 14 variáveis + income)
@@ -13,6 +13,6 @@ Arquivo: C:\Users\F3\Downloads\painel-auditoria-v2\painel-auditoria\dados\adult.
 [INFO  ] Linhas repetidas (informativo): 52  (esperado: existem na base original; não remover)
 
 Hash SHA-256: b5802f938fa90b9e203d9cc165f5f6eb91fcd32fd3edb7ccf29ba6ee550fa9d7
-[OK    ] Hash registrado em adult.sha256. Façam commit deste arquivo junto com a base.
+[OK    ] Hash igual ao registrado: é a mesma base do grupo.
 
 Resultado: base validada. Pode seguir para o piloto.
